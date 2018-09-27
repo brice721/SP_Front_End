@@ -18,5 +18,11 @@
             autofocus: true,
             extraKeys: {"Ctrl-Space": "autocomplete"}
         });
+
+        vm.codeEditor = '';
+        vm.fakeSave = () => {
+            const input = document.getElementById('editor');
+            console.log('Here is your value:\n', input.innerText);
+        };
     }
 })();

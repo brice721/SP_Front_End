@@ -1,7 +1,10 @@
 <h1 style="text-align: center">Editor Works</h1>
 <div class="card">
     <div class="card-body">
-        <textarea title="code-mirror" id="editor"></textarea>
+        <textarea title="code-mirror" id="editor" ng-model="ec.codeEditor"></textarea>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-danger" ng-click="ec.fakeSave()">Save</button>
     </div>
 </div>
 
