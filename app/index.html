@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="snippets">
+<head>
+    <meta charset="UTF-8">
+    <title>Snippets</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/darcula.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/dracula.css">
+
+
+</head>
+<body>
+    <spire-navigation></spire-navigation>
+    <div ng-view></div>
+
+    <!-- Vendor -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/codemirror/lib/codemirror.js"></script>
+    <script src="bower_components/codemirror/addon/comment/comment.js"></script>
+    <script src="bower_components/codemirror/addon/comment/continuecomment.js"></script>
+    <script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
+    <script src="bower_components/codemirror/addon/hint/javascript-hint.js"></script>
+    <script src="bower_components/codemirror/addon/edit/matchbrackets.js"></script>
+
+    <script src="app.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app.run.js"></script>
+    <script src="services/code-mirror/code-mirror.js"></script>
+    <!-- Views Module -->
+    <script src="views/views.module.js"></script>
+
+    <!-- Home -->
+    <script src="views/home/home.module.js"></script>
+    <script src="views/home/home.controller.js"></script>
+
+    <!-- Editor -->
+    <script src="views/editor/editor.module.js"></script>
+    <script src="views/editor/editor.controller.js"></script>
+
+    <!-- Layouts -->
+    <script src="layouts/layouts.module.js"></script>
+    <script src="layouts/navigation/navigation.module.js"></script>
+    <script src="layouts/navigation/navigation.directive.js"></script>
+    <script src="layouts/navigation/navigation.controller.js"></script>
+</body>
+</html>
